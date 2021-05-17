@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RouterModule } from '@angular/router';
+import { NewInventoryComponent } from './new-inventory/new-inventory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomepageComponent
+    HomepageComponent,
+    NewInventoryComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +20,9 @@ import { RouterModule } from '@angular/router';
       {
         path: '',
         component: HomepageComponent
+      }, {
+        path: 'new',
+        component: NewInventoryComponent
       }
       ]
     )
