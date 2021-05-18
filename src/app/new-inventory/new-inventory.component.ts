@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-new-inventory',
@@ -8,14 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class NewInventoryComponent implements OnInit {
 
-  constructor(private http: HttpClientModule) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    // this.http
-    //   .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory`)
-    //   .subscribe(response => {
-    //     console.log(response);
-    //   });
+    this.http
+      .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory`)
+      .subscribe(response => {
+        console.log(response);
+      });
   }
 
 }
