@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class NewUsedPipe implements PipeTransform {
 
   transform(value: any, ...args: any[]): any {
-    return value ? 'Used' : 'New';
+    return value ? 'New' : 'Used';
   }
 
 }
