@@ -1,4 +1,5 @@
 <section class="carsFlex" *ngFor="let car of cars">
+  <a routerLink="/inventory/"><i>IMAGE HERE</i></a>
   <h3>Make: {{car.make}}:</h3>
   <h4>Model: {{car.model}}</h4>
   <p>Trim: {{car.trim}}</p>
@@ -6,4 +7,4 @@
   <p>Condition {{car.isNew}}</p>
   <p>Engine: {{car.engine}}</p>
 </section>
-<!--*ngFor="let turret of turretArray; index as i" [turretNumber]="i"-->
+<a routerLink="/search">Search Cars</a>

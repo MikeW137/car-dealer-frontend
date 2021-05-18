@@ -6,6 +6,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
 import { SearchCarsComponent } from './search-cars/search-cars.component';
+import { InventoryComponent } from './search-cars/inventory/inventory.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SearchCarsComponent } from './search-cars/search-cars.component';
     HeaderComponent,
     HomepageComponent,
     SearchCarsComponent,
+    InventoryComponent,
   ],
   imports: [
     BrowserModule,
