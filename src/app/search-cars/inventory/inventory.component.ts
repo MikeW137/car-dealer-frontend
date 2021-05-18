@@ -11,9 +11,18 @@ import {SearchCarsComponent} from '../search-cars.component';
 export class InventoryComponent implements OnInit {
   inventory: any;
   cars: any;
+  //booleanDisplay: any;
 
   constructor(private http: HttpClient, private route: ActivatedRoute) { }
 
+  // isTrue(isNew){
+  //   if (isNew){
+  //     return this.booleanDisplay = 'New';
+  //   }
+  //   else {
+  //     return this.booleanDisplay = 'Used';
+  //   }
+  // }
   ngOnInit(): void {
     this.route.paramMap
       .subscribe(params => {
