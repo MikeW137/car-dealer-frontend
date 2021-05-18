@@ -1,19 +1,17 @@
 .carsFlex {
   display: flex;
   flex-direction: row;
-  max-width: 90%;
-  max-height: 90vh;
+  max-width: 20%;
+  max-height: 20%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   border-style: solid;
   border-color: #00619E;
   background-color: blue;
 }
 .carsChild {
-  width: 20%;
-  height: 20%;
   background-color: red;
 }

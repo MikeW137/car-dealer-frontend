@@ -19,7 +19,7 @@ export class InventoryComponent implements OnInit {
 
         this.http
           .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory/search/${id}`)
-          .subscribe(response => console.log(response));
+          .subscribe(response => this.inventory = response);
       });
   }
 

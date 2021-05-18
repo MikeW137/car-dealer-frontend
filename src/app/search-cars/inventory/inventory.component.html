@@ -1,1 +1,17 @@
-<p>inventory works!</p>
+<section class="inventoryFlex" *ngFor="let inventory of inventory">
+  <a routerLink="/inventory/{{inventory.id}}">
+    <div class ="carsChild">
+
+      <img src="{{inventory.imageList[0].imageUrl}}">
+<!--      <p>Make: {{cars.inventory.make}}</p>-->
+      <h3>Price: ${{inventory.price}}:</h3>
+      <h4>VIN Number: {{inventory.vin}}</h4>
+      <p>Color: {{inventory.color}}</p>
+      <p>Fuel Efficiency: {{inventory.fuelEfficiency}}</p>
+      <p>New: {{inventory.isNew}}</p>
+<!--      <p>Condition {{car.isNew}}</p>-->
+<!--      <p>Engine: {{car.engine}}</p>-->
+
+    </div>
+  </a>
+</section>
