@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RouterModule } from '@angular/router';
 import { NewInventoryComponent } from './new-inventory/new-inventory.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NewInventoryComponent } from './new-inventory/new-inventory.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: '',
