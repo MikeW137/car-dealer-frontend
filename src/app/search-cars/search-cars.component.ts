@@ -8,11 +8,11 @@ import {HttpClient} from '@angular/common/http';
 })
 export class SearchCarsComponent implements OnInit {
   cars: any;
-
+  condition: any;
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
     this.http
       .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
       .subscribe(response => this.cars = response);
-      });
+      }
   }

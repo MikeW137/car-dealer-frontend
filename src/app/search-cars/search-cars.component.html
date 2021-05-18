@@ -1,4 +1,9 @@
-<section *ngIf="cars">
-  <h3>Make {{cars.make}}:</h3>
-  <h4>Model {{cars.model}}</h4>
+<section class="carsFlex" *ngFor="let car of cars">
+  <h3>Make: {{car.make}}:</h3>
+  <h4>Model: {{car.model}}</h4>
+  <p>Trim: {{car.trim}}</p>
+  <p>Year: {{car.year}}</p>
+  <p>Condition {{car.isNew}}</p>
+  <p>Engine: {{car.engine}}</p>
 </section>
+<!--*ngFor="let turret of turretArray; index as i" [turretNumber]="i"-->
