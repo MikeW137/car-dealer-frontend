@@ -10,7 +10,7 @@
 </section>
 
 <section class="carsFlex" *ngFor="let car of cars">
-  <a routerLink="/inventory/">
+  <a routerLink="/inventory/{{car.id}}">
   <div class ="carsChild">
 
   <img src="{{car.stockPhoto}}">

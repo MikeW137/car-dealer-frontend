@@ -8,7 +8,6 @@ import {HttpClient} from '@angular/common/http';
 })
 export class SearchCarsComponent implements OnInit {
   cars: any;
-  condition: any;
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
     this.http
