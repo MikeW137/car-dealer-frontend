@@ -10,4 +10,10 @@
   flex-wrap: nowrap;
   border-style: solid;
   border-color: #00619E;
+  background-color: blue;
+}
+.carsChild {
+  width: 20%;
+  height: 20%;
+  background-color: red;
 }

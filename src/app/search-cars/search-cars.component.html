@@ -1,10 +1,15 @@
 <section class="carsFlex" *ngFor="let car of cars">
-  <a routerLink="/inventory/"><i>IMAGE HERE</i></a>
+  <a routerLink="/inventory/">
+  <div class ="carsChild">
+
+  <img src="{{car.stockPhoto}}">
   <h3>Make: {{car.make}}:</h3>
   <h4>Model: {{car.model}}</h4>
   <p>Trim: {{car.trim}}</p>
   <p>Year: {{car.year}}</p>
   <p>Condition {{car.isNew}}</p>
   <p>Engine: {{car.engine}}</p>
+
+  </div>
+  </a>
 </section>
-<a routerLink="/search">Search Cars</a>
