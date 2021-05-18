@@ -16,3 +16,9 @@
   margin-right: auto;
   text-align: center;
 }
+.widgets:hover{
+  transform: scale(1.1);
+}
+.widgets {
+max-height: 5em;
+}
