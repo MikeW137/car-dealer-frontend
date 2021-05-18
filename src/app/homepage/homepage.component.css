@@ -14,4 +14,24 @@
   max-height: 75vh;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+.widgets:hover{
+  transform: scale(1.1);
+}
+.widgets {
+max-height: 5em;
+}
+.googleMaps{
+  text-align: center;
+}
+.welcomeCarbana {
+  text-align: center;
+  justify-content: right;
+  max-width: 70%;
+  max-height: 75vh;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
 }
