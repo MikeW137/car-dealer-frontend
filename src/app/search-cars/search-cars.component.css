@@ -21,3 +21,15 @@ img {
   max-width: 50%;
   max-height: 50vh;
 }
+select {
+  width: 25em;
+  height: 3em;
+}
+.filterCars{
+  display: inline-block;
+  background-color: grey;
+  max-width: 50%;
+  max-height: 10vh;
+  text-align: center;
+  margin-left:35%;
+}

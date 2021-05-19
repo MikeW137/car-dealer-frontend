@@ -1,4 +1,4 @@
-<section class="filterCars">
+<div class="filterCars">
   <h2><span>Select a Make:</span></h2>
   <select (change)="selectChangeHandler($event)">
     <option value="None">Make</option>
@@ -6,7 +6,7 @@
     <option value="Honda">Honda</option>
     <option value="Hyndai">Hyndai</option>
   </select>
-</section>
+</div>
 <section>
 <div class="carsFlex" *ngFor="let car of filteredList">
   <a class ="carsChild" routerLink="/inventory/{{car.id}}">
