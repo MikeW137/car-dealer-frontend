@@ -2,8 +2,7 @@
 <p>VIN Number: {{inventory.vin}}</p>
 <p>Color: {{inventory.color}}</p>
 <p>Fuel Efficiency: {{inventory.fuelEfficiency}}</p>
-<p>New: {{inventory.isNew}}</p>
-{{inventory.imageList[0].imageUrl}}
+<p>Condition: {{inventory.new | newUsed}}</p>
 <section class="carouselMain">
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
