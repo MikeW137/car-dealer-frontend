@@ -1,11 +1,9 @@
 <section class="inventoryFlex" *ngFor="let inventory of inventory">
-  <a routerLink="/car/{{inventory.id}}">
-    <div class ="carsChild">
+  <a  class ="carsChild"routerLink="/car/{{inventory.id}}">
       <img src="{{inventory.imageList[0].imageUrl}}">
       <h1>{{cars.year}} {{cars.make}} {{cars.model}}</h1>
       <p>Price: ${{inventory.price}}:</p>
       <p>Color: {{inventory.color}}</p>
       <p>Condition: {{inventory.new | newUsed}}</p>
-    </div>
   </a>
 </section>
