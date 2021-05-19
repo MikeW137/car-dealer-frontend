@@ -17,9 +17,10 @@ export class SearchCarsComponent implements OnInit {
       .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
       .subscribe(response => this.filteredList = response);
   }
-  // selectChangeHandler (event: any) {
-  //   this.selectedMake = event.target.value;
-  // }
+  selectChangeHandler (event: any) {
+    this.selectedMake = event.target.value;
+    this.filteredList = this.masterList.filter(i => i.make === this.selectedMake);
+  }
   // filterMake(make: any) {
   //   this.http
   //     .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`).pipe(map(filteredList => filteredList.filter(i => i.make === make)))
@@ -28,7 +29,11 @@ export class SearchCarsComponent implements OnInit {
   ngOnInit(): void {
     this.http
       .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
-      .subscribe(response => this.masterList = response);
+      .subscribe(response => {
+       this.masterList = response;
+        this.filteredList = this.masterList;
+      });
+
   }
 }
 
