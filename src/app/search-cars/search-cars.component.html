@@ -9,8 +9,8 @@
 <!--  </select>-->
 <!--  <p><span>You selected: </span><b>{{selectedMake}}</b></p>-->
 <!--</section>-->
-
-<section class="carsFlex" *ngFor="let car of masterList">
+<section>
+<div class="carsFlex" *ngFor="let car of masterList">
   <a class ="carsChild" routerLink="/inventory/{{car.id}}">
   <img src="{{car.stockPhoto}}">
   <h3>Make: {{car.make}}:</h3>
@@ -20,4 +20,5 @@
   <p>Condition {{car.isNew}}</p>
   <p>Engine: {{car.engine}}</p>
   </a>
+</div>
 </section>
