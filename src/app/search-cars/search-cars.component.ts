@@ -11,12 +11,6 @@ export class SearchCarsComponent implements OnInit {
   filteredList: any;
   constructor(private http: HttpClient) { }
   selectedMake: string = '';
-
-  // filterListCall(): void {
-  //   this.http
-  //     .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
-  //     .subscribe(response => this.filteredList = response);
-  // }
   selectChangeHandler (event: any) {
     this.selectedMake = event.target.value;
     if (this.selectedMake !== "None") {
