@@ -20,7 +20,11 @@ export class InventoryComponent implements OnInit {
   selectCondition (event: any) {
     this.selectedCondition = event.target.value;
     if (this.selectedCondition !== "None") {
-      this.filteredList = this.masterList.filter(i => i.price === this.selectedCondition);
+      console.log(this.filteredList);
+      console.log(this.masterList);
+      console.log(this.masterList[0].new.toString());
+      console.log(this.selectedCondition);
+      this.filteredList = this.masterList.filter(i => i.new.toString() === this.selectedCondition);
     }
     else {
       this.filteredList = this.masterList;
