@@ -6,8 +6,8 @@
     <option value="false">Used Vehicles</option>
   </select>
 </section>
-
-<section class="inventoryFlex" *ngFor="let inventory of filteredList">
+<section>
+<div class="inventoryFlex" *ngFor="let inventory of filteredList">
   <a  class ="carsChild"routerLink="/car/{{inventory.id}}">
       <img src="{{inventory.imageList[0].imageUrl}}">
       <h1>{{cars.year}} {{cars.make}} {{cars.model}}</h1>
@@ -15,4 +15,5 @@
       <p>Color: {{inventory.color}}</p>
       <p>Condition: {{inventory.new | newUsed}}</p>
   </a>
+</div>
 </section>
