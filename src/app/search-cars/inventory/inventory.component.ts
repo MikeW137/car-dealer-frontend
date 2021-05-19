@@ -24,7 +24,7 @@ export class InventoryComponent implements OnInit {
       console.log(this.masterList);
       console.log(this.masterList[0].new.toString());
       console.log(this.selectedCondition);
-      this.filteredList = this.masterList.filter(i => i.new === this.selectedCondition);
+      this.filteredList = this.masterList.filter(i => i.new.toString() === this.selectedCondition);
     }
     else {
       this.filteredList = this.masterList;

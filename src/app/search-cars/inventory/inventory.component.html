@@ -1,9 +1,9 @@
-<section class="filterCars" [(ngModel)]="selectedCondition">
+<section class="filterCars">
   <h2><span>Select Condition:</span></h2>
   <select (change)="selectCondition($event)">
     <option value="None">Condition</option>
-    <option [ngValue]="true">New Vehicles</option>
-    <option [ngValue]="false">Used Vehicles</option>
+    <option value="true">New Vehicles</option>
+    <option value="false">Used Vehicles</option>
   </select>
 </section>
 
