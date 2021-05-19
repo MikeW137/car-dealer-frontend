@@ -1,3 +1,16 @@
+.inventoryFlex{
+  display: inline-block;
+  max-width: 75%;
+  max-height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.carsChild {
+  max-width: 50%;
+  max-height: 50vh;
+}
+
 .carousel {
   max-width: 50%;
   max-height: 50vh;

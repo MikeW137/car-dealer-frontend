@@ -1,8 +1,12 @@
-<p>Price: ${{inventory.price}}:</p>
+<section class="inventorySection">
+<div class ="carsChild">
+  <p>Price: ${{inventory.price}}:</p>
 <p>VIN Number: {{inventory.vin}}</p>
 <p>Color: {{inventory.color}}</p>
 <p>Fuel Efficiency: {{inventory.fuelEfficiency}}</p>
 <p>Condition: {{inventory.new | newUsed}}</p>
+</div>
+</section>
 <section class="carouselMain">
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">

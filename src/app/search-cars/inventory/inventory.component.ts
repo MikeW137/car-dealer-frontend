@@ -14,8 +14,6 @@ export class InventoryComponent implements OnInit {
   selectedCondition: any;
   filteredList: any;
 
-
-
   constructor(private http: HttpClient, private route: ActivatedRoute) { }
   selectCondition (event: any) {
     this.selectedCondition = event.target.value;

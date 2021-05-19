@@ -1,5 +1,8 @@
-.inventoryFlex{
+section {
   display: flex;
+  max-width: 90%;
+}
+.inventoryFlex {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 50%;
@@ -7,13 +10,12 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  border-style: solid;
+  border-color: grey;
 }
 .carsChild {
-  flex-direction: row;
   max-width: 50%;
   max-height: 50vh;
-  flex-wrap: wrap;
-
 }
 img {
   max-width: 50%;
