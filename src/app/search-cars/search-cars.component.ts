@@ -12,26 +12,26 @@ export class SearchCarsComponent implements OnInit {
   constructor(private http: HttpClient) { }
   selectedMake: string = '';
 
-  filterListCall(): void {
-    this.http
-      .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
-      .subscribe(response => this.filteredList = response);
-  }
-  selectChangeHandler (event: any) {
-    this.selectedMake = event.target.value;
-    this.filteredList = this.masterList.filter(i => i.make === this.selectedMake);
-  }
-  // filterMake(make: any) {
+  // filterListCall(): void {
   //   this.http
-  //     .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`).pipe(map(filteredList => filteredList.filter(i => i.make === make)))
+  //     .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
   //     .subscribe(response => this.filteredList = response);
   // }
+  selectChangeHandler (event: any) {
+    this.selectedMake = event.target.value;
+    if (this.selectedMake !== "None") {
+      this.filteredList = this.masterList.filter(i => i.make === this.selectedMake);
+    }
+    else {
+      this.filteredList = this.masterList;
+    }
+  }
   ngOnInit(): void {
     this.http
       .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
       .subscribe(response => {
        this.masterList = response;
-        this.filteredList = this.masterList;
+       this.filteredList = this.masterList;
       });
 
   }
