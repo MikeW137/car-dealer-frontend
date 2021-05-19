@@ -13,5 +13,11 @@ export class SearchCarsComponent implements OnInit {
     this.http
       .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
       .subscribe(response => this.cars = response);
-      }
+    this.printCars();
+
   }
+  printCars(): void {
+    console.log(this.cars);
+  }
+  }
+

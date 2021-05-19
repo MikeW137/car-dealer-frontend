@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
 import { SearchCarsComponent } from './search-cars/search-cars.component';
 import { InventoryComponent } from './search-cars/inventory/inventory.component';
+import { IndividualCarComponent } from './search-cars/inventory/individual-car/individual-car.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { InventoryComponent } from './search-cars/inventory/inventory.component'
     HomepageComponent,
     SearchCarsComponent,
     InventoryComponent,
+    IndividualCarComponent,
   ],
   imports: [
     BrowserModule,
