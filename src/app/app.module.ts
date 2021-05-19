@@ -8,6 +8,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { SearchCarsComponent } from './search-cars/search-cars.component';
 import { InventoryComponent } from './search-cars/inventory/inventory.component';
 import { NewUsedPipe } from './search-cars/inventory/new-used.pipe';
+import {IndividualCarComponent} from './search-cars/inventory/individual-car/individual-car.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NewUsedPipe } from './search-cars/inventory/new-used.pipe';
     SearchCarsComponent,
     InventoryComponent,
     NewUsedPipe,
+    IndividualCarComponent
   ],
   imports: [
     BrowserModule,
