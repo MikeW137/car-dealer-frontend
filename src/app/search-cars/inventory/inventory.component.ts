@@ -9,22 +9,41 @@ import {SearchCarsComponent} from '../search-cars.component';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent implements OnInit {
-  inventory: any;
+  masterList: any;
   cars: any;
+  selectedCondition: any;
+  filteredList: any;
+
+
 
   constructor(private http: HttpClient, private route: ActivatedRoute) { }
-
+  selectCondition (event: any) {
+    this.selectedCondition = event.target.value;
+    if (this.selectedCondition !== "None") {
+      console.log(this.filteredList);
+      console.log(this.masterList);
+      console.log(this.masterList[0].new.toString());
+      console.log(this.selectedCondition);
+      this.filteredList = this.masterList.filter(i => i.new === this.selectedCondition);
+    }
+    else {
+      this.filteredList = this.masterList;
+    }
+  }
   ngOnInit(): void {
     this.route.paramMap
       .subscribe(params => {
         let id = parseInt(params.get('id'));
         this.http
           .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory/search/${id}`)
-          .subscribe(response => this.inventory = response);
+          .subscribe(response => {
+            this.masterList = response;
+            this.filteredList = this.masterList;
+          });
         this.http
           .get(`https://radiant-sierra-38985.herokuapp.com/api/cars/${id}`)
           .subscribe(response => this.cars = response);
       });
   }
-
 }
+

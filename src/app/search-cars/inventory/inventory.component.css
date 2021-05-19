@@ -1,0 +1,21 @@
+.inventoryFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 50%;
+  max-height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.carsChild {
+  flex-direction: row;
+  max-width: 50%;
+  max-height: 50vh;
+  flex-wrap: wrap;
+
+}
+img {
+  max-width: 50%;
+  max-height: 50vh;
+}

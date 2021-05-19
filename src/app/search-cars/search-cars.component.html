@@ -1,18 +1,15 @@
 <section class="filterCars">
-  <label for="carsOptions">Filter by: </label>
-  <select name="cars" id="carsOptions">
-    <option value="volvo">Make</option>
-    <option value="saab">Ford</option>
-    <option value="mercedes">Honda</option>
-    <option value="audi">Hyndai</option>
+  <h2><span>Select a Make:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="None">Make</option>
+    <option value="Ford">Ford</option>
+    <option value="Honda">Honda</option>
+    <option value="Hyndai">Hyndai</option>
   </select>
-  <input type="submit" value="Submit">
 </section>
-
-<section class="carsFlex" *ngFor="let car of cars">
-  <a routerLink="/inventory/{{car.id}}">
-  <div class ="carsChild">
-
+<section>
+<div class="carsFlex" *ngFor="let car of filteredList">
+  <a class ="carsChild" routerLink="/inventory/{{car.id}}">
   <img src="{{car.stockPhoto}}">
   <h3>Make: {{car.make}}:</h3>
   <h4>Model: {{car.model}}</h4>
@@ -20,7 +17,6 @@
   <p>Year: {{car.year}}</p>
   <p>Condition {{car.isNew}}</p>
   <p>Engine: {{car.engine}}</p>
-
-  </div>
   </a>
+</div>
 </section>

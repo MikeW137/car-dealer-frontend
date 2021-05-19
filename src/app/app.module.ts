@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
 import { SearchCarsComponent } from './search-cars/search-cars.component';
 import { InventoryComponent } from './search-cars/inventory/inventory.component';
-import { IndividualCarComponent } from './search-cars/inventory/individual-car/individual-car.component';
+import { NewUsedPipe } from './search-cars/inventory/new-used.pipe';
+import {IndividualCarComponent} from './search-cars/inventory/individual-car/individual-car.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { IndividualCarComponent } from './search-cars/inventory/individual-car/i
     HomepageComponent,
     SearchCarsComponent,
     InventoryComponent,
-    IndividualCarComponent,
+    NewUsedPipe,
+    IndividualCarComponent
   ],
   imports: [
     BrowserModule,
