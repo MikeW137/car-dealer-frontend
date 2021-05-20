@@ -6,6 +6,18 @@ A car dealership page, which visitors can check new and pre-owned vehicles inven
 
 ### General Approach
 
+We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones.
+
+### Screenshots
+
+We used some assets from car dealership websites in the Chicago area, such as https://www.patrickhyundai.com/ and https://www.carvana.com/ in order to re-create the feeling of a car dealership.
+
+<img width="1659" alt="Screen Shot 2021-05-20 at 1 54 11 PM" src="https://user-images.githubusercontent.com/49173138/119033506-ea1b4c80-b972-11eb-8879-db19f24a441d.png">
+<img width="1673" alt="Screen Shot 2021-05-20 at 1 54 24 PM" src="https://user-images.githubusercontent.com/49173138/119033513-eb4c7980-b972-11eb-9fa8-ecbcc964aefe.png">
+<img width="1663" alt="Screen Shot 2021-05-20 at 1 51 21 PM" src="https://user-images.githubusercontent.com/49173138/119033522-ed163d00-b972-11eb-802b-4536533989db.png">
+
+
+
 ### ERD Diagram
 
 ![Dealership ERD](https://user-images.githubusercontent.com/49173138/118517829-2e051c00-b6fd-11eb-9599-60eedc021bab.jpg)
