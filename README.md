@@ -16,8 +16,6 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 <img width="1673" alt="Screen Shot 2021-05-20 at 1 54 24 PM" src="https://user-images.githubusercontent.com/49173138/119033513-eb4c7980-b972-11eb-9fa8-ecbcc964aefe.png">
 <img width="1663" alt="Screen Shot 2021-05-20 at 1 51 21 PM" src="https://user-images.githubusercontent.com/49173138/119033522-ed163d00-b972-11eb-802b-4536533989db.png">
 
-
-
 ### ERD Diagram
 
 ![Dealership ERD](https://user-images.githubusercontent.com/49173138/118517829-2e051c00-b6fd-11eb-9599-60eedc021bab.jpg)
@@ -31,6 +29,25 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 <img width="1028" alt="Screen Shot 2021-05-13 at 12 15 17 PM" src="https://user-images.githubusercontent.com/49173138/118161304-09e7c900-b3e5-11eb-9c17-c69d84b2e529.png">
 
 ### Machineries used
+
+- Angular 11
+- Spring Boot Framework
+- IntelliJ IDEA/Java 11
+- Tomcat Server
+- Apache Maven
+- Dev Profile
+- Postman
+- Postgresql
+- pgAdmin 4
+- Bootstrap
+- Animate.css Library
+- Heroku
+- Kommunicate.io Bot
+- Dialogflow ES (Google Cloud)
+- Pivotal Tracker
+    
+
+
 
 ### User Stories
 
@@ -51,3 +68,5 @@ Visitor:
 - As a visitor, I want to be able to filter vehicles by charateristics.
 - As a visitor, I want to be able to leave reviews for the dealership
 - As a visitor, I want to be able to calculate a potential deal with the specific car interest.
+- As a visitor, I want to be able to contact customer service via a chat menu.
+- As a visitor, I want to be able to see the location of the dealership.
