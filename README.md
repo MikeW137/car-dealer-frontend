@@ -65,5 +65,9 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 - Kommunicate.io Bot
 - Dialogflow ES (Google Cloud)
 - Pivotal Tracker
+
+### Descriptions of any unsolved problems or major hurdles
+We had hurdles during our efforts to implement the API filtering for the cars. Another obstacle we had, is when we were trying to deploy our API to Heroku, where
+we experienced issues with the JWT variable.
     
 
