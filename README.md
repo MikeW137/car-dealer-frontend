@@ -30,22 +30,19 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 ### Endpoints
 | Endpoint | Functionality | Access |
 |---|----| --- |
-| GET /api/books | Get all Books | PUBLIC |
-| POST /api/books/1 | Creating a Single Book | PUBLIC |
-| PUT /api/books/1 | Updating Single Book | PUBLIC |
-| DELETE /api/books/1 | Delete Single Book | PUBLIC |
-| GET /api/books/1/authors | Get All Authors | PUBLIC |
-| POST /api/books/1/authors/1 | Get a Single Author | PUBLIC |
-| PUT /api/books/1/authors/1 | Update a Single Author | PUBLIC |
-| DELETE /api/books/1/authors/1 | Delete a Single Author | PUBLIC
-| GET api/books/1/genres | Get all Genres | PUBLIC |
-| POST api/books/1/genres/1 | Create a Single Genre | PUBLIC |
-| PUT api/books/1/genres/1 | Update a Single Genre | PUBLIC|
-| DELETE api/books/1/genres/1 | Delete a Single Genre | PUBLIC |
-| GET /api/books/1/publishers | Get all Publishers | PUBLIC |
-| POST /api/books/1/publishers/1 | Create a Single Publisher | PUBLIC |
-| PUT api/books/1/publishers/1 | Update a Single Publisher | PUBLIC |
-| DELETE api/books/1/publishers/1 | Delete a Single Publisher | PUBLIC |
+| GET /api/cars | Get All Car Makes | PUBLIC |
+| GET /api/cars/1 | Get Individual Car Make | PUBLIC |
+| GET /api/inventory | Get Make Inventory | PUBLIC |
+| GET /api/inventory/1 | Get Specific Make Cars | PUBLIC |
+| GET /api/inventory/search/1 | Get Specific Car | PUBLIC |
+| POST /api/inventory/1 | Creating Single Car | PRIVATE |
+| PUT /api/inventory/1 | Updating Single Car | PRIVATE |
+| DELETE /api/inventory/1 | Delete Single Car | PRIVATE |
+| POST /api/cars | Create Car Make | PRIVATE |
+| PUT /api/cars/1 | Update Car Make | PRIVATE |
+| DELETE /api/cars/1 | Delete Car Make | PRIVATE |
+| POST api/inventory/1/images | Create Inventory Image | PRIVATE |
+| DELETE api/images/1 | Delete Inventory Image | PRIVATE |
 
 
 ### Machineries used
