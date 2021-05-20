@@ -1,6 +1,6 @@
 section {
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
 }
 .carsFlex {
   flex-direction: row;
@@ -16,6 +16,7 @@ section {
 .carsChild {
   max-width: 50%;
   max-height: 50vh;
+  color: grey;
 }
 img {
   max-width: 50%;
@@ -33,3 +34,4 @@ select {
   text-align: center;
   margin-left:35%;
 }
+
