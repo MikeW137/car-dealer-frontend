@@ -1,27 +1,41 @@
-# CarDealer
+# car-dealer-frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+### Project
 
-## Development server
+A car dealership page, which visitors can check new and pre-owned vehicles inventory. The backend can be seen [here!](https://github.com/MikeW137/car-dealer-backend/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### General Approach
 
-## Code scaffolding
+### ERD Diagram
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Dealership ERD](https://user-images.githubusercontent.com/49173138/118517829-2e051c00-b6fd-11eb-9599-60eedc021bab.jpg)
 
-## Build
+### Wireframes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Home Page
+<img width="1025" alt="Screen Shot 2021-05-13 at 11 56 47 AM" src="https://user-images.githubusercontent.com/49173138/118161264-fccada00-b3e4-11eb-8ab3-dccf731ba79d.png">
 
-## Running unit tests
+- Inventory Pages
+<img width="1028" alt="Screen Shot 2021-05-13 at 12 15 17 PM" src="https://user-images.githubusercontent.com/49173138/118161304-09e7c900-b3e5-11eb-9c17-c69d84b2e529.png">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Machineries used
 
-## Running end-to-end tests
+### User Stories
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Our users are separated in two groups. First, employees, which are manipulating the website database and structure,
+adding cars to a database. Second, visitors, which are accesing the website without being able to register, but having
+access to multiple website features.
 
-## Further help
+Employee:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- As an employee, I want to be able to login to the application.
+- As an employee, I want to be able to add cars to a car inventory
+- As an employee, I want to be able to display a picture of the car.
+
+Visitor:
+
+- As a visitor, I want to be able to view a home page with a meaningful content.
+- As a visitor, I want to be able to view new/pre-owned car lists.
+- As a visitor, I want to be able to filter vehicles by charateristics.
+- As a visitor, I want to be able to leave reviews for the dealership
+- As a visitor, I want to be able to calculate a potential deal with the specific car interest.
