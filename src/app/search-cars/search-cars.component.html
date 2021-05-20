@@ -11,10 +11,8 @@
 <div class="carsFlex" *ngFor="let car of filteredList">
   <a class ="carsChild" routerLink="/inventory/{{car.id}}">
   <img src="{{car.stockPhoto}}">
-  <h3>Make: {{car.make}}:</h3>
-  <h4>Model: {{car.model}}</h4>
+  <h3>{{car.year}} {{car.make}} {{car.model}}</h3>
   <p>Trim: {{car.trim}}</p>
-  <p>Year: {{car.year}}</p>
   <p>Condition {{car.isNew}}</p>
   <p>Engine: {{car.engine}}</p>
   </a>
