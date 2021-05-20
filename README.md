@@ -1,5 +1,7 @@
 # car-dealer-frontend
 
+Car dealership project. Link to the website [here!](https://car-dealer10.herokuapp.com/)
+
 ### Project
 
 A car dealership page, which visitors can check new and pre-owned vehicles inventory. The backend can be seen [here!](https://github.com/MikeW137/car-dealer-backend/)
