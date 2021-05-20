@@ -1,27 +1,59 @@
-# CarDealer
+### Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+A car dealership page, which visitors can check new and pre-owned vehicles inventory. Link to the website [here!](https://car-dealer10.herokuapp.com/)
+The backend can be seen [here!](https://github.com/MikeW137/car-dealer-backend/)
 
-## Development server
+### General Approach
+We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Features
+- Bootstrap carousel for advertisement/home page information
+- Chat bot, with pre-determined responses using Dialogflow ES (Google Cloud)
+- Google maps integration for the dealership address (Has a placeholder address of Bob Rohrman's Schaumburg Ford)
+- Cars/Inventory/Single Car pages with API filter calls to our database.
+- API testing with J-Unit and Mock MVC
+- JSON Web Token Security
 
-## Code scaffolding
+### Screenshots
+We used some assets from car dealership websites in the Chicago area, such as https://www.patrickhyundai.com/ and https://www.carvana.com/ in order to re-create the feeling of a car dealership.
+<img width="1659" alt="Screen Shot 2021-05-20 at 1 54 11 PM" src="https://user-images.githubusercontent.com/49173138/119033506-ea1b4c80-b972-11eb-8879-db19f24a441d.png">
+<img width="1673" alt="Screen Shot 2021-05-20 at 1 54 24 PM" src="https://user-images.githubusercontent.com/49173138/119033513-eb4c7980-b972-11eb-9fa8-ecbcc964aefe.png">
+<img width="1663" alt="Screen Shot 2021-05-20 at 1 51 21 PM" src="https://user-images.githubusercontent.com/49173138/119033522-ed163d00-b972-11eb-802b-4536533989db.png">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ERD Diagram
+![Dealership ERD](https://user-images.githubusercontent.com/49173138/118517829-2e051c00-b6fd-11eb-9599-60eedc021bab.jpg)
 
-## Build
+### Endpoints
+| Endpoint | Functionality | Access |
+|---|----| --- |
+| GET /api/cars | Get All Car Makes | PUBLIC |
+| GET /api/cars/1 | Get Individual Car Make | PUBLIC |
+| GET /api/inventory | Get Make Inventory | PUBLIC |
+| GET /api/inventory/1 | Get Specific Make Cars | PUBLIC |
+| GET /api/inventory/search/1 | Get Specific Car | PUBLIC |
+| POST /api/inventory/1 | Creating Single Car | PRIVATE |
+| PUT /api/inventory/1 | Updating Single Car | PRIVATE |
+| DELETE /api/inventory/1 | Delete Single Car | PRIVATE |
+| POST /api/cars | Create Car Make | PRIVATE |
+| PUT /api/cars/1 | Update Car Make | PRIVATE |
+| DELETE /api/cars/1 | Delete Car Make | PRIVATE |
+| POST api/inventory/1/images | Create Inventory Image | PRIVATE |
+| DELETE api/images/1 | Delete Inventory Image | PRIVATE |
+| DELETE api/images/1 | Delete Inventory Image | PRIVATE |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Machineries used
+- Angular 11
+- Spring Boot Framework
+- IntelliJ IDEA/Java 11
+- Tomcat Server
+- Apache Maven
+- Dev Profile
+- Postman
+- Postgresql
+- pgAdmin 4
+- Bootstrap
+- Animate.css Library
+- Heroku
+- Kommunicate.io Bot
+- Dialogflow ES (Google Cloud)
+- Pivotal Tracker
