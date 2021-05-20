@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute} from '@angular/router';
-import {SearchCarsComponent} from '../search-cars.component';
+import { UrlSet } from '../../../url';
 
 @Component({
   selector: 'app-inventory',
@@ -13,6 +13,7 @@ export class InventoryComponent implements OnInit {
   cars: any;
   selectedCondition: any;
   filteredList: any;
+  url = UrlSet.url;
 
   constructor(private http: HttpClient, private route: ActivatedRoute) { }
   selectCondition (event: any) {
@@ -33,13 +34,13 @@ export class InventoryComponent implements OnInit {
       .subscribe(params => {
         let id = parseInt(params.get('id'));
         this.http
-          .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory/search/${id}`)
+          .get(`${this.url}/inventory/search/${id}`)
           .subscribe(response => {
             this.masterList = response;
             this.filteredList = this.masterList;
           });
         this.http
-          .get(`https://radiant-sierra-38985.herokuapp.com/api/cars/${id}`)
+          .get(`${this.url}/cars/${id}`)
           .subscribe(response => this.cars = response);
       });
   }

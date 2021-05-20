@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { HttpClient} from '@angular/common/http';
+import { UrlSet } from '../../../../url';
 
 @Component({
   selector: 'app-individual-car',
@@ -9,6 +10,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class IndividualCarComponent implements OnInit {
   inventory: any;
+  url = UrlSet.url;
 
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
@@ -17,7 +19,7 @@ export class IndividualCarComponent implements OnInit {
       .subscribe(params => {
         let id = parseInt(params.get('id'));
         this.http
-          .get(`https://radiant-sierra-38985.herokuapp.com/api/inventory/${id}`)
+          .get(`${this.url}/inventory/${id}`)
           .subscribe(response => this.inventory = response);
       });
   }

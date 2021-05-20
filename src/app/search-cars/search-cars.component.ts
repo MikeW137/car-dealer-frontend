@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { UrlSet} from '../../url';
 
 @Component({
   selector: 'app-search-cars',
@@ -11,6 +12,8 @@ export class SearchCarsComponent implements OnInit {
   filteredList: any;
   constructor(private http: HttpClient) { }
   selectedMake: string = '';
+  url = UrlSet.url;
+
   selectChangeHandler (event: any) {
     this.selectedMake = event.target.value;
     if (this.selectedMake !== "None") {
@@ -22,7 +25,7 @@ export class SearchCarsComponent implements OnInit {
   }
   ngOnInit(): void {
     this.http
-      .get(`https://radiant-sierra-38985.herokuapp.com/api/cars`)
+      .get(`${this.url}/cars`)
       .subscribe(response => {
         this.masterList = response;
         this.filteredList = this.masterList;
