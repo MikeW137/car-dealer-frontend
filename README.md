@@ -6,9 +6,9 @@ Car dealership project. Link to the website [here!](https://car-dealer10.herokua
 
 A car dealership page, which visitors can check new and pre-owned vehicles inventory. The backend can be seen [here!](https://github.com/MikeW137/car-dealer-backend/)
 
-### General Approach
+### General Approach and Features
 
-We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones.
+We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones. 
 
 ### Screenshots
 
