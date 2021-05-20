@@ -7,16 +7,22 @@ section {
   flex-wrap: wrap;
   max-width: 50%;
   max-height: 75vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 5em;
   text-align: center;
   border-style: solid;
   border-color: grey;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 .carsChild {
   max-width: 50%;
   max-height: 50vh;
   color: grey;
+}
+.carsFlex:hover{
+  transform: scale(1.1);
 }
 img {
   max-width: 50%;
