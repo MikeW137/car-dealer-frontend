@@ -40,3 +40,11 @@ select {
   text-align: center;
   margin-left:35%;
 }
+#buyImg {
+  max-width: 100%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+#buyImg2 {
+  max-width: 100%;
+}
