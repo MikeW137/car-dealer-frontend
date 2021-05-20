@@ -8,7 +8,16 @@ A car dealership page, which visitors can check new and pre-owned vehicles inven
 
 ### General Approach and Features
 
+- **General Approach**
 We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones. 
+
+- **Features**
+- Bootstrap carousel for advertisement/home page information
+- Chat bot, with pre-determined responses using Dialogflow ES (Google Cloud)
+- Google maps integration for the dealership address (Has a placeholder address of Bob Rohrman's Schaumburg Ford)
+- Cars/Inventory/Single Car pages with API filter calls to our database.
+- API testing with J-Unit and Mock MVC
+- JSON Web Token Security
 
 ### Screenshots
 
@@ -48,8 +57,6 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 - Dialogflow ES (Google Cloud)
 - Pivotal Tracker
     
-
-
 
 ### User Stories
 
