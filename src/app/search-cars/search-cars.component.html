@@ -8,7 +8,7 @@
   </select>
 </div>
 <section>
-<div class="carsFlex" *ngFor="let car of filteredList">
+<div class="carsFlex animate__animated animate__fadeIn" *ngFor="let car of filteredList">
   <a class ="carsChild" routerLink="/inventory/{{car.id}}">
   <img src="{{car.stockPhoto}}">
   <h3>{{car.year}} {{car.make}} {{car.model}}</h3>

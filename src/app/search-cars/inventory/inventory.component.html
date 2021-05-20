@@ -7,7 +7,7 @@
   </select>
 </div>
 <section>
-<div class="inventoryFlex" *ngFor="let inventory of filteredList">
+<div class="inventoryFlex animate__animated animate__fadeIn" *ngFor="let inventory of filteredList">
   <a  class ="carsChild"routerLink="/car/{{inventory.id}}">
       <img src="{{inventory.imageList[0].imageUrl}}">
       <h1>{{cars.year}} {{cars.make}} {{cars.model}}</h1>
