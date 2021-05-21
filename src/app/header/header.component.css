@@ -26,3 +26,11 @@ nav{
   overflow: hidden;
   background-color: #00619E;
 }
+
+.logo {
+  max-width: 175px;
+}
+
+.top {
+  margin-top: 11px;
+}
