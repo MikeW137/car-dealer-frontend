@@ -10,12 +10,9 @@
 </section>
 <section class="carouselMain">
   <div id="carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="3000">
-        <img src="{{inventory.imageList[0].imageUrl}}" class="d-block w-100" alt="ImageOne">
-      </div>
-      <div class="carousel-item" data-interval="5000">
-        <img src="{{inventory.imageList[1].imageUrl}}" class="d-block w-100" alt="ImageTwo">
+    <div class="carousel-inner" id="slideshow">
+      <div class="carousel-item" data-interval="3000" *ngFor="let image of imageList, let i = index" id="{{i}}">
+        <img src="{{image.imageUrl}}" class="d-block w-100">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -36,3 +33,5 @@
   <img class="extrasImg"  src ="assets/individual_car/interior.png">
   <img class="extrasImg"  src ="assets/individual_car/keyless.png">
 </section>
+
+
