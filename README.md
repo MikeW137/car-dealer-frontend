@@ -70,7 +70,27 @@ We used some assets from car dealership websites in the Chicago area, such as ht
 - Dialogflow ES (Google Cloud)
 - Pivotal Tracker
 
-### Descriptions of any unsolved problems or major hurdles
+### Installation
+
+- The installation instructions are for running the front-end locally, but connecting to
+a Back-end hosted on heroku
+Front-End
+1. Clone Repository
+2. Run 'npm install' in the project folder
+3. Run command 'ng serve'
+
+If you are having troubles running it check "start" field and change to "ng serve"
+
+<img width="567" alt="Screen Shot 2021-05-21 at 10 33 59 AM" src="https://user-images.githubusercontent.com/49173138/119162614-3375a580-ba20-11eb-806e-1218b06b8a6a.png">
+
+
+- Backend Maven Dependencies:
+You can reload project under maven options if dependencies don’t load properly on first download.
+![image](https://user-images.githubusercontent.com/7227339/114568739-03293300-9c3a-11eb-875e-096c82f199ab.png)
+
+
+### Descriptions of any unsolved problems
 We had hurdles during our efforts to implement the API filtering for the cars. Another obstacle we had, is when we were trying to deploy our API to Heroku, where
 we experienced issues with the JWT variable.
+    
     
