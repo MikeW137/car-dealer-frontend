@@ -33,12 +33,12 @@ select {
   height: 3em;
 }
 .filterCars{
-  display: inline-block;
-  background-color: grey;
-  max-width: 50%;
+  display:flex;
+  background-color: cornflowerblue;
+  max-width: 100%;
   max-height: 10vh;
   text-align: center;
-  margin-left:35%;
+  justify-content: center;
 }
 #buyImg {
   max-width: 100%;
@@ -47,4 +47,5 @@ select {
 #buyImg2 {
   max-width: 100%;
 }
+
 
