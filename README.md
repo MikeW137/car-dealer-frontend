@@ -7,8 +7,6 @@ The backend can be seen [here!](https://github.com/MikeW137/car-dealer-backend/)
 
 We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones. 
 
-### Features
-=======
 ### General Approach
 
 We have four SQL Tables for the inventory/cars/images/users. Our approach was to allow annonomoys users to browse the inventory and make GET calls to the API, but not being able to POST, PUT or DELETE. Those operations are only allowed for our admin users, which are populating the database. In the backend, we split our code into business logic in the Service package and front-end mapping in the Controller package. We also created custom error messages contained within the Exception package, which are handling those cases. Our Repository package is using predefined methods from JPARepository interface, alongside some custom ones. 
@@ -25,11 +23,11 @@ We have four SQL Tables for the inventory/cars/images/users. Our approach was to
 
 We used some assets from car dealership websites in the Chicago area, such as https://www.patrickhyundai.com/ and https://www.carvana.com/ in order to re-create the feeling of a car dealership.
 
-<img width="1659" alt="Screen Shot 2021-05-20 at 1 54 11 PM" src="https://user-images.githubusercontent.com/49173138/119033506-ea1b4c80-b972-11eb-8879-db19f24a441d.png">
+<img width="1662" alt="Screen Shot 2021-05-21 at 10 19 44 AM" src="https://user-images.githubusercontent.com/49173138/119160867-5010de00-ba1e-11eb-99d7-3df662bb6174.png">
+<img width="1667" alt="Screen Shot 2021-05-21 at 10 19 56 AM" src="https://user-images.githubusercontent.com/49173138/119160913-599a4600-ba1e-11eb-8da0-715ac4920e9a.png">
 <img width="1672" alt="Screen Shot 2021-05-20 at 2 54 45 PM" src="https://user-images.githubusercontent.com/49173138/119040833-83e6f780-b97b-11eb-8337-046ca8d08908.png">
-<img width="1663" alt="Screen Shot 2021-05-20 at 1 51 21 PM" src="https://user-images.githubusercontent.com/49173138/119033522-ed163d00-b972-11eb-802b-4536533989db.png">
-<img width="1673" alt="Screen Shot 2021-05-20 at 1 54 24 PM" src="https://user-images.githubusercontent.com/49173138/119033513-eb4c7980-b972-11eb-9fa8-ecbcc964aefe.png">
-<img width="1675" alt="Screen Shot 2021-05-20 at 2 55 13 PM" src="https://user-images.githubusercontent.com/49173138/119040895-92351380-b97b-11eb-9147-a9d65785b367.png">
+<img width="1671" alt="Screen Shot 2021-05-21 at 10 20 20 AM" src="https://user-images.githubusercontent.com/49173138/119160990-70d93380-ba1e-11eb-8240-125459c2c421.png">
+<img width="1672" alt="Screen Shot 2021-05-21 at 10 20 51 AM" src="https://user-images.githubusercontent.com/49173138/119161032-7afb3200-ba1e-11eb-81f8-114294cf4fa3.png">
 
 
 ### ERD Diagram
